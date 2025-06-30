@@ -1,0 +1,45 @@
+{
+  "scripts": {
+    "eslint": "eslint .",
+    "eslint:fix": "eslint --fix .",
+    "lint": "npm run config && npm run eslint",
+    "lint:fix": "npm run config && npm run eslint:fix",
+    "config": "node ./main/utils/data/filesParser.js",
+    "config:parallel": "node ./main/utils/data/filesParser.js --parallel",
+    "load:parallel": "npm run config:parallel && cypress run --headed --browser chrome",
+    "start:ci": "docker run -d -p 80:3000 --name amanat24_front $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_NAME:$CI_COMMIT_SHORT_SHA & npx wait-on http://172.17.0.2 -t 60000",
+    "cypress:run": "suite=${file:+${file}Suite.js}; cypress run --headed --browser chrome --spec ./tests/suites/${suite:-**/*Suite.js}",
+    "test": "npm run config && file=$file npm run cypress:run",
+    "test:split": "npm run config && cypress run --browser chrome --env split=true",
+    "test:parallel": "cypress-parallel -s load:parallel -w './artifacts/parallel-weights.json' -t 5 -d './tests/suites/*Suite.js' -b"
+  },
+  "devDependencies": {
+    "cypress-parallel": "^0.14.0",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-cypress": "^3.0.1",
+    "wait-on": "^7.2.0"
+  },
+  "dependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "@testing-library/cypress": "^9.0.0",
+    "allure-commandline": "^2.23.1",
+    "axios": "^0.21.1",
+    "cypress": "12.14.0",
+    "cypress-fail-fast": "^7.1.1",
+    "cypress-fill-command": "^1.0.2",
+    "cypress-localstorage-commands": "^2.2.4",
+    "cypress-log-filter": "^1.0.4",
+    "cypress-plugin-multiple-click": "^1.0.0",
+    "cypress-real-events": "^1.12.0",
+    "cypress-split": "^1.18.5",
+    "cypress-wait-until": "^3.0.2",
+    "cypress-xpath": "^2.0.1",
+    "dotenv": "^16.3.1",
+    "moment": "^2.30.1",
+    "moment-timezone": "^0.5.45",
+    "mysql2": "^3.4.1",
+    "xml2js": "^0.6.2"
+  }
+}

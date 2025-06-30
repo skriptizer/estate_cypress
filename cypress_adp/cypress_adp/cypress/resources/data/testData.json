@@ -1,0 +1,148 @@
+{
+  "approvedAgentsFromDropdownKASKO": [
+    "ТОВАРИЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ЦЕНТР СТРАХОВЫХ УСЛУГ\"", 
+    "Не предусмотрен"
+  ],
+  "carConditionLabelsKASKO": {
+    "new": [
+      "Новое из автосалона",
+      "Новое у неофициального дилера или частного лица"
+    ],
+    "used": [
+      "Б/У"
+    ]
+  },
+  "testCasesKASKO": [
+    {
+      "carCondition": "new",
+      "programType": "ФКУ",
+      "productCode": "200",
+      "withOptics": false
+    },
+    {
+      "carCondition": "new",
+      "programType": "ФКУ",
+      "productCode": "203",
+      "withOptics": false
+    },
+    {
+      "carCondition": "used",
+      "programType": "Дефолтная",
+      "productCode": "206",
+      "withOptics": true
+    },
+    {
+      "carCondition": "used",
+      "programType": "ФКУ",
+      "productCode": "200",
+      "withOptics": false
+    },
+    {
+      "carCondition": "used",
+      "programType": "ФКУ",
+      "productCode": "203",
+      "withOptics": true
+    },
+    {
+      "carCondition": "used",
+      "programType": "ФКУ",
+      "productCode": "203",
+      "withOptics": false
+    }
+  ],
+  "timeIncrement": [2, "months"],
+  "timeIncrementOneYear": [1, "year"],
+  "timeIncrement180Days": [180, "days"],
+  "timeIncrementForKaskoInstallmentPaymentFirstDate": [1, "months"],
+  "timeIncrementForEstateInstallmentPaymentFirstDate": [1, "months"],
+  "datesFormatYMD": "YYYY-MM-DD",
+  "datesFormatDMY": "DD.MM.YYYY",
+  "responsePaid": "оплачен",
+  "OGPOperiod": "12 месяцев",
+  "issuedStatus": "Выписан",
+  "draftStatus": "Черновик",
+  "unifiedCombinedLimit": "550000 тг. (обоюдка 150000 + беспечный водитель 400000)",
+  "mutualPremium": "14999",
+  "MSTExcludedCountries": ["Казахстан"],
+  "MSTCountriesCount": 3,
+  "QuoteRisksCount": 3,
+  "OGPOPolicyCodeNumber": "901-",
+  "MSTPolicyCodeNumber": "802-",
+  "mutualPolicyCodeNumber": "219-",
+
+  "carRegion": "Алматы",
+  "carType": "Легковые",
+
+  "holderCountry": "Казахстан",
+  "holderRegion": "Алматинская область",
+  "holderDocumentGivedBy": "МЮ РК",
+  "holderDocumentGivedByQuote": " Министерство юстиции Республики Казахстан ",
+  "holderAddress": "Ул. Есенина, д. 10, кв. 3 Толя тест",
+  "holderEmail": "a.anisimov@a-i.kz",
+  "holderPhone": "77066682051",
+  "holderPhoneTrimmed": "7066682051",
+  "holderPhoneFormatted": "+7 706 668 20 51",
+  "holderDriverLicenceType": "Права РК",
+  "holderIsPDL": "Нет",
+  "holderIsInvalid": "Нет",
+  "holderIsPensioner": "Нет",
+
+  "insuredDocumentGivedBy": "МВД РК",
+  "insuredAddress": "Ул. Достык 232, кв. 7",
+  "insuredDriverLicenceType": "Права РК",
+  "insuredEmail": "a.anisimov@a-i.kz",
+  "insuredIsInvalid": "Нет",
+  "insuredIsPensioner": "Нет",
+  "insuredIsPDL": "Нет",
+  "juridicalInsured": "ЛИЦА, НА ОСНОВАНИИ ПУТЕВЫХ ЛИСТОВ И/ИЛИ ДОВЕРЕННОСТИ ВЫДАННЫХ СТРАХОВАТЕЛЕМ",
+
+  "beneficiaryDocumentGivedBy": "МВД РК",
+  "beneficiaryDocumentGivedByQuote": " Министерство внутренних дел Республики Казахстан ",
+  "beneficiaryAddress": "Ул. Достык 232, кв. 7",
+  "beneficiaryEmail": "a.galimova@a-i.kz",
+  "beneficiaryPhone": "77066682051",
+
+  "pathToTestPicture": "./resources/testPicture.jpg",
+  "pathToTestObjectFileForManagerV1": "./resources/objectTestFileForManagerV1.xlsx",
+  "pathToTestObjectFileForUnderV1": "./resources/objectTestFileForUnderV1.xlsx",
+
+  "vehicleCount": "4",
+  "totalInsuredAmount": "5 000 000.00",
+  "totalInsurancePremium": "123 692.00",
+  "typesOfCost": "Рыночная",
+  "vehicleTypes": "Легковые",
+  "insuranceTerritories": "Казахстан, Узбекистан, Кыргызстан, Российская Федерация",
+  "serviceStation": "По отчету оценщика; ",
+
+  "additionalVehicleUsageComment": "Иногда используется для доставки строительных материалов по проселочным дорогам.",
+  "riskFactorsComment": "Автомобиль хранится на открытой стоянке без охраны. Иногда управляется водителем с минимальным стажем (менее 1 года).",
+  "additionalInformationForFranchise": "Франшиза применяется только в случае частичного ущерба (например, повреждение кузова, стекол, фар и т.д.).",
+  "insuranceObjectsInformation": "Автомобиль 1:\nМарка/модель: Toyota Camry\nГод выпуска: 2022\nVIN: XXXXXXXXXXXXXX\nРыночная стоимость: 10 500 000 тг.",
+  "managerComment": "Особые условия:\nВключить покрытие на территории стран СНГ.\nУчет износа запчастей при расчете возмещения не требуется.",
+  "underwriterComment": "Изменены значения в полях франшизы по повреждению, франшизы по утрате, а также добавлены риски и значение РВД.",
+  "managerCommentAfterRevision": "Внесенные изменения приняты. Прошу принять заявку на рассмотрение",
+  "underwriterCommentForApprove": "Одобряю эту котировку.",
+  "underwriterName": "Уланов Евгений Николаевич",
+
+  "salesChannelsInterceptRegex": "channel-details\\?where\\[sales_channel_id_1c\\]\\[operator\\]==&where\\[sales_channel_id_1c\\]\\[value\\]=IDOnes",
+  "insuranceTypesInterceptRegex": "insurance-type-products\\?insurance_type_id=typeID",
+
+  "insuranceTypeVehicle": "Страхование автомобильного транспорта",
+
+  "quotationValidityPeriod": "30",
+
+  "estateAddress": "алматы достык 232",
+  "apartamentNumber": "24",
+  "extraInfo": "Выгодоприобретатель работает в частной консалтинговой компании, специализирующейся на инвестиционном анализе и финансовом планировании. Опыт работы — более 5 лет. В настоящее время занимает должность ведущего аналитика. В сферу ответственности входит работа с международными клиентами, управление активами и консультирование по вопросам налоговой оптимизации.",
+
+  "requestsForIntercept": {
+    "quoteCreate": "**/api/quote/requests/create",
+    "quoteApprove": "**/api/quote/requests/approve/*",
+    "login": "**/api/login"
+  },
+
+  "messages": {
+    "quoteCreateSuccess": "Заявка успешно сохранена!",
+    "quoteApproveSuccess": "Заявка успешно утверждена!"
+  }
+}
